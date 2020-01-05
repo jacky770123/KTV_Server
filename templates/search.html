@@ -1,0 +1,20 @@
+<!doctype html>
+<head>
+  <title>Search</title>
+</head>
+<body>
+  <h1>This is the result of "{{song}}"</h1>
+  <table>
+    {% for i in results  %}
+      <tr>
+        <td rowspan=2><img src="{{i.img}}"> </td>
+        <td><a href="{{i.address}}">{{i.title}}</a></td>
+      </tr>
+      <tr>
+        <td>{{i.time}}</td>
+      </tr>
+    {% endfor %}
+  </table>
+  </ul>
+</body>
+
