@@ -14,7 +14,7 @@ def search():
         #https://www.youtube.com/results?search_query=%E5%91%8A%E7%99%BD%E6%B0%A3%E7%90%83
         
         song = request.values['song']           #get song's title from index (POST)
-        results = crawler.crawler(song)
+        results = crawler.crawlerYT(song)
 
         return render_template('search.html', results = results, song = song)
     else :
